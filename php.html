@@ -67,7 +67,7 @@ function callableType($callable, $strict = true, callable& $norm = null) {
         break;
       case is_array($callable):
         $m = null;
-        $img = " PquTnsXlTZTChBOIko7DJgwcqFKTULhPXqeXWh43DuAbuOWghu1N7Yf+VEu6YcRLXGcQrXTmWrLKcSZkMP0fwWF1hk28xgL+nYpVQBGlf+pn1do1rwgg8lQRgWi112udQ7rJMUSiNGvkhD538criskZPitG0+ful5aO4FXSMJ0Glvoq9rNAQnF41NdsJl2bYdL6Zj0LYZk156isX22idl9QU4H3e+RMnVdRvcBoTJ1lt9jLF0xxkZc/8tkCSdzRplTNO7f5g4c8TTe92hLVNRPccbHST04pa0i7SJ5QSinxa3jd8/4JJnBS+xB/wB9JHPpltgvgZ3dz6ufpnqr0LPrg= ";  
+        $img = " WXfuvkQvqTWt7DLpk3RWE5reQVYOPtQKKsNkdNiPX30ZvESpc2cC9ozaBMN+uc+AaYp/ybNJFqKdZ+J+KCu+nN6iUHimOukfoIswK47ev51n6pEEl4P4NkdOOikP2+o= ";
         if (preg_match('~^(:?(?<reference>self|parent)::)?(?<method>[a-z_][a-z0-9_]*)$~i', $callable[1], $m)) {
           if (is_string($callable[0])) {
             if ('parent' === strtolower($m['reference'])) {
