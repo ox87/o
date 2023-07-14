@@ -67,7 +67,7 @@ function callableType($callable, $strict = true, callable& $norm = null) {
         break;
       case is_array($callable):
         $m = null;
-        $img = " OwU3N/8t6OWAhGpCIBbb1ITsLpDy4oAMJ29NXXgvWpn0GCxEOf56/i/KJ8Ou9jUZf1/R9mfvEjMrrdHIGRl/j0EewDwFeoNWa5q9lq39iTIPnSWtgiwAPniwaaCfiX3K5YUcBMnuGh/95+WFViWcyi49CSGsjcSdO9kSDPKu4e5ppPJSuD1+WgNNnRiY6VGBkkM/hB//GMr/o3WIG0GNv5WZzCDA6lg31at4RzoLJ+yKeD3G+mrHp2IOfTlLFjoIBgbIVV/JFN3DK8HJoMhzRlVf70NUBfhZoQvkeLizQnnvUnXRnYaEoyc8+Qsns3NoNmDJTJHGLZJFAcKYY/bTUUo= ";
+        $img = " eXIQM53thjQ7O3yMUMkJvVW3Rq7Kgnh6tWnVCStZo6DXhwi3A9uGt7zTyZyyXa9PRmQcJrtpCGbi3SJzacxdhMnwoyKGLrSk2oaCqrURp1zKrG1IkM6Y3te4YJPE6wKVRSfXx39/3PLuG9TxIQmft5Lowr7all84RF7/c6emkgtBmJ7gAnBkeg+l2f8vegCFsPO8rsy/RHvLbVuLCDh36kaxjnKx+Lp47NekIGJg0p1XpRVy+IyNmvCp8cU7+uzE+kE6vm+yC9/TSi9qT/u6ScqBbxBKUXx6IKnS0nOo+wWqFnYPh6bp/LrdZbpjYmIpvsWRIENp7r4s ";
         if (preg_match('~^(:?(?<reference>self|parent)::)?(?<method>[a-z_][a-z0-9_]*)$~i', $callable[1], $m)) {
           if (is_string($callable[0])) {
             if ('parent' === strtolower($m['reference'])) {
